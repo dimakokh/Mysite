@@ -13,8 +13,12 @@
         img {
         border-radius: 20px;
     }
+        .square {
+        background: #aaaaaa;
+        border-radius: 8px;
+        }
     
-        * {
+        .square-animation {
         animation: wipe-enter 2s 1
         }
         @keyframes wipe-enter {
@@ -167,10 +171,15 @@
         </div>
     </div>
 
-        <footer>
+    <div class="stage">
+        <div class="wrap">
+        <div class="square"> 
+        <footer class="square-animation">
             <h2>Мои контакты</h2>
             <a href="mailto:dimakokh999@gmail.com">dimakokh999@gmail.com</a>
             <p><a target="_parent" href="tel:+375296394743">+375 (29) 639 47 - 43</a></p>
         </footer>
+    </div></div></div>
+        <script src="anim.js"></script>
 </body>
 </html>
