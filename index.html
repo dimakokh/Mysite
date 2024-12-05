@@ -10,6 +10,18 @@
     * {
         box-sizing: border-box;
     }
+    
+        * {
+        animation: wipe-enter 2s 1
+        }
+        @keyframes wipe-enter {
+        0% {
+        transform: scale(0, .025)
+        }
+        50% {
+        transform: scale(1, .025)
+        }
+    }
 
     body {
         font-family: Arial;
@@ -157,5 +169,6 @@
             <a href="mailto:dimakokh999@gmail.com">dimakokh999@gmail.com</a>
             <p><a target="_parent" href="tel:+375296394743">+375 (29) 639 47 - 43</a></p>
         </footer>
+            <script src="anim.js"></script>
 </body>
 </html>
