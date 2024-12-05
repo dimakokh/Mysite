@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial;
+        margin: 0;
+    }
+
+    header {
+        padding: 60px;
+        text-align: center;
+        background: #333;
+        color: #ffffff;
+        animation: header 3s infinite alternate;
+    }
+
+    @keyframes header {
+        form {
+            background-color: #333;
+        }
+        to {
+            background-color: #444;
+        }
+    }
+    .navbar {
+        display: flex;
+        background-color: #333;
+    }
+
+    .navbar a {
+        color: #ffffff;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .navbar a:hover {
+        background-color: #ddd;
+        color: #000;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .slide {
+        flex: 30%;
+        background-color: #f1f1f1;
+        padding: 20px;
+        animation: slide 3s infinite alternate;
+    }
+
+    @keyframes slide {
+        form {
+            background-color: #f1f1f1;
+        }
+        to {
+            background-color: #ebebeb;
+        }
+    }
+
+    .main {
+        flex: 70%;
+        background-color: white;
+        padding: 20px;
+    }
+
+    .faceing {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;
+    }
+
+    footer {
+        padding: 20px;
+        text-align: center;
+        background-color: #ddd;
+        
+    }
+
+    @media screen and (max-width: 700px){
+        .row, .navbar {
+            flex-direction: column;
+        }
+    }
+    
+    @media screen and (max-width: 850px){
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: #333;
+    }
+    p {
+        word-break: normal;
+    }
+</style>
+<body>
+<header>
+    <h1>Мой сайт</h1>
+    <p>Здесь вы узаите мого <b>интересных фактов</b> про природу</p>
+</header>
+
+<div class="navbar">
+    <a target="_blank" href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B0%D0%B9%D1%82">Сайт</a>
+    <a target="_blank" href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%88%D0%BA%D0%B0">Кошка</a>
+    <a target="_blank" href="https://ru.wikipedia.org/wiki/%D0%9B%D0%B5%D0%B2">Лев</a>
+    <a target="_blank" href="https://ru.wikipedia.org/wiki/%D0%93%D0%BE%D1%80%D0%B0">Гора</a>
+</div>
+
+    <div class="row">
+        <div class="slide">
+            <h2>Рыжая кошка</h2>
+            <h5>Ко́шка (лат. Felis catus) — домашнее животное, одно из наиболее популярных (наряду с собакой) «животных-компаньонов».</h5>
+            <img height="300" width="200" src="https://avatars.mds.yandex.net/i?id=1ad17a08d786d999e2d1cfc1f11b4493-2480538-images-thumbs&n=13" alt="Кошка">
+            <p>С точки зрения научной систематики, домашняя кошка — млекопитающее семейства кошачьих отряда хищных. Одни исследователи рассматривают домашнюю кошку как подвид дикой кошки, другие — как отдельный биологический вид.</p>
+            <img height="300" width="200" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpnDR_juCifCfNFAdXQ5mv2l9kg5TsDQkLhQ&s" alt="Заяц">
+            <img height="300" width="200" src="https://trikky.ru/wp-content/blogs.dir/1/files/2023/03/23/zyro-image-11.jpg" alt="Яблоко">
+            <img height="300" width="200" src="https://img1.akspic.ru/previews/1/6/0/6/7/176061/176061-yablochnyj_pejzazh-yabloko-illustracia-prirodnyj_landshaft-purpur-500x.jpg" alt="Пейзаж">
+        </div>
+
+        <div class="main">
+            <h2>Моя сестра</h2>
+            <h5>Она милашка</h5>
+            <img height="300" width="200" src="photo_2024-11-30_23-04-25.jpg" alt="Моя сестра">
+            <p>Она любит играться с игрушкамии ползать</p>
+            <br>
+            <h2>Неоновый лев</h2>
+            <h5>Лев (лат. Panthera leo) — вид хищных млекопитающих, один из пяти представителей рода пантер (Panthera), относящегося к подсемейству больших кошек в составе семейства кошачьих. Наряду с тигром — самая крупная из ныне живущих кошек, масса некоторых самцов может достигать 250 кг.</h5>
+            <img  height="530" width="530" src="https://4g-inter.net/image/cache/catalog/goods/ai/3d/lion1-500x500.jpg" alt="Лев">
+            <p>Трудно сказать достоверно, кто массивнее: крупнейшие подвиды льва или крупнейшие подвиды тигра. Связано это с тем, что известные очень большие массы амурских тигров в большинстве своём признаны недостаточно достоверными.</p>
+            <p>Достаточными данными о размерах и массе представителей крупнейших подвидов льва (например, берберийском) наука не располагает. Что касается живущих в неволе животных, они часто являют собой смешение разных подвидов. Существует мнение, что львы в неволе несколько превышают тигров в размерах и массе, так же как и обратное ему.</p>
+            <br>
+        </div>
+    </div>
+
+        <footer>
+            <h2>Мои контакты</h2>
+            <a href="mailto:dimakokh999@gmail.com">dimakokh999@gmail.com</a>
+            <p><a target="_parent" href="tel:+375296394743">+375 (29) 639 47 - 43</a></p>
+        </footer>
+</body>
+</html>
