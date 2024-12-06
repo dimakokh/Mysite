@@ -128,6 +128,38 @@
     p {
         word-break: normal;
     }
+        img {
+        border-radius: 20px;
+    }
+    .square {
+        background: #aaaaaa;
+        border-radius: 8px;
+        }
+    .square-animation {
+        animation: wipe-enter 2s 1
+        }
+        @keyframes wipe-enter {
+    0% {
+        transform: translateX(-150%);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(8%);
+    }
+    65%{
+        transform: translateX(-4%);
+    }
+    80%{
+        transform: translateX(4%);
+    }
+    95%{
+        transform: translateX(-2%);
+    }           
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }   
+}
 </style>
 <body>
 <header>
