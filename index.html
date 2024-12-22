@@ -261,19 +261,7 @@
         <script>
             AOS.init();
         </script>
-            <script>
-                        function submitForm(event) {
-            event.preventDefault();
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-
-            // Display the form data in an alert (for demonstration purposes)
-            alert(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
-
-            // Here you can add code to send the form data to a server if needed
-        }
-    </script>
+        <script>
             document.getElementById('themeToggle').addEventListener('click', function() {
                 const currentTheme = document.body.className;
                 if (currentTheme === 'dark-theme') {
@@ -283,5 +271,18 @@
                 }
             });
             </script>
+        <script>
+            function submitForm(event) {
+                event.preventDefault();
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+
+                // Display the form data in an alert (for demonstration purposes)
+                alert(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
+
+                // Here you can add code to send the form data to a server if needed
+        }
+    </script>
 </body>
 </html>
