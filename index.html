@@ -177,6 +177,25 @@
     p {
         word-break: normal;
     }
+            form {
+            display: flex;
+            flex-direction: column;
+        }
+        form input, form textarea {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+        }
+        form button {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #555;
+        }
 </style>
 <body>
 <header data-aos="fade-right">
@@ -221,6 +240,18 @@
         </div>
     </div>
 
+        </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>This is the contact section of the website. You can add contact information or a contact form here.</p>
+        <form id="contactForm" onsubmit="submitForm(event)">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
         <footer data-aos="fade-right" id="ww">
             <h2>Мои контакты</h2>
             <a class="a" href="mailto:dimakokh999@gmail.com">dimakokh999@gmail.com</a>
@@ -231,6 +262,18 @@
             AOS.init();
         </script>
             <script>
+                        function submitForm(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Display the form data in an alert (for demonstration purposes)
+            alert(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
+
+            // Here you can add code to send the form data to a server if needed
+        }
+    </script>
             document.getElementById('themeToggle').addEventListener('click', function() {
                 const currentTheme = document.body.className;
                 if (currentTheme === 'dark-theme') {
