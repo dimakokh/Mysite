@@ -4,227 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="AOS.css" rel="stylesheet">
-      <link rel="shortcut icon" href="https://github.com/user-attachments/assets/add7765b-4616-4e9e-9532-47ad902e15bf">
+    <link rel="stylesheet" href="Flex.css">
     <title>Мой сайт</title>
 </head>
-<style>
-    
-    body.light-theme{
-        background-color: #ffffff;
-    }
 
-    body.dark-theme{
-        background-color: #5f5f5f;
-    }
-
-    .light-theme #qq{
-    background-color: #ececec;
-    color: #000000;
-    animation: none;
-    }
-    .dark-theme #qq{
-    background-color: #2f2f2f;
-    color: #ffffff;
-    }
-
-    .light-theme #aa{
-    background-color: #f2f2f2;
-    color: #000000;
-    }
-    .dark-theme #aa{
-    background-color: #2f2f2f;
-    color: #ffffff;
-    }
-
-    .light-theme footer{
-    background-color: #dedede;
-    color: #000000;
-    }
-    .dark-theme footer{
-    background-color: #2f2f2f;
-    color: #ffffff;
-    }
-
-    .light-theme .a{
-            color: #333;
-    }
-    .dark-theme .a{
-        color: #ebebeb;
-    }
-
-    #themeToggle {
-        width: 50px;
-        height: 50px;
-        transition: 1s;
-    }
-    
-    #themeToggle:hover {
-        transform: scale(1.5); /* Увеличиваем масштаб */
-        margin-left: 15px;
-    }
-
-    img {
-        border-radius: 10px;
-        margin:0px 0px 0px -5px;
-    }
-</style>
-<style>
-        * {
-        box-sizing: border-box;
-        overflow-x:hidden ;
-    }
-
-    body {
-        font-family: Arial;
-        margin: 0;
-    }
-
-    header {
-        padding: 60px;
-        text-align: center;
-        background: #333;
-        color: #ffffff;
-        animation: header 3s infinite alternate;
-    }
-
-    @keyframes header {
-        form {
-            background-color: #333;
-        }
-        to {
-            background-color: #444;
-        }
-    }
-    .navbar {
-        display: flex;
-        background-color: #333;
-        overflow: hidden;
-    }
-
-    .navbar a {
-        color: #ffffff;
-        padding: 14px 20px;
-        text-decoration: none;
-        text-align: center;
-    }
-
-    .navbar a:hover {
-        background-color: #ddd;
-        color: #000;
-    }
-
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .slide {
-        flex: 30%;
-        background-color: #f1f1f1;
-        padding: 20px;
-    }
-
-    @keyframes slide {
-        form {
-            background-color: #f1f1f1;
-        }
-        to {
-            background-color: #ebebeb;
-        }
-    }
-
-    .main {
-        flex: 70%;
-        background-color: white;
-        padding: 20px;
-    }
-
-    .faceing {
-        background-color: #aaa;
-        width: 100%;
-        padding: 20px;
-    }
-
-    footer {
-        padding: 20px;
-        text-align: center;
-        background-color: #ddd;
-        
-    }
-
-    @media screen and (max-width: 700px){
-        .row, .navbar {
-            flex-direction: column;
-        }
-        img {
-            width: 100%;
-            height: auto;
-        }
-        #themeToggle{
-            margin: 0 auto;
-            display: block;
-        }
-        #themeToggle:hover {
-            margin: 0 auto;
-        }
-    }
-
-    a {
-        text-decoration: none;
-        color: #333;
-        transition: 0.25s;
-    }
-    p {
-        word-break: normal;
-    }
-</style>
-<body>
+<body class="light-theme">
 <header data-aos="fade-right">
     <h1>Мой сайт</h1>
-    <p>Здесь вы узаите мого <b>интересных фактов</b> про природу</p>
+    <p>Здесь вы узнаите много <b>интересных фактов</b> про природу</p>
 </header>
 
-<div data-aos="fade-right" class="navbar">
-    <img id="themeToggle" src="https://github.com/user-attachments/assets/a82e3190-10de-4ce1-94e3-f6b49051f8a2">
-    <a target="_blank" href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B0%D0%B9%D1%82">Сайт</a>
-    <a target="_blank" href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%88%D0%BA%D0%B0">Кошка</a>
-    <a target="_blank" href="https://ru.wikipedia.org/wiki/%D0%9B%D0%B5%D0%B2">Лев</a>
-    <a target="_blank" href="https://ru.wikipedia.org/wiki/%D0%93%D0%BE%D1%80%D0%B0">Гора</a>
-</div>
+<nav data-aos="fade-right">
+    <img class="logo" id="themeToggle" src="TemaMC-Photoroom.png">
+    <a href="#about" class="nav">О мне</a>
+    <a href="#contact" class="nav">Контакты</a>
+    <a target="_blank" href="#lew">Лев</a>
+    <a onclick="go()">?</a>
+</nav>
 
-    <div class="row">
-        <div class="slide"  id="qq">
+    <div class="row" >
+        <div class="slide" id="qq">
             <h2 data-aos="fade-up-right">Рыжая кошка</h2>
             <h5 data-aos="fade-up-right">Ко́шка (лат. Felis catus) — домашнее животное, одно из наиболее популярных (наряду с собакой) «животных-компаньонов».</h5>
-            <img data-aos="flip-left" height="300" width="200" src="https://avatars.mds.yandex.net/i?id=1ad17a08d786d999e2d1cfc1f11b4493-2480538-images-thumbs&n=13" alt="Кошка">
-            <p data-aos="flip-left">С точки зрения научной систематики, домашняя кошка — млекопитающее семейства кошачьих отряда хищных. Одни исследователи рассматривают домашнюю кошку как подвид дикой кошки, другие — как отдельный биологический вид.</p>
-            <img data-aos="fade-down-right" height="300" width="200" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpnDR_juCifCfNFAdXQ5mv2l9kg5TsDQkLhQ&s" alt="Заяц">
-            <img data-aos="fade-up" height="300" width="200" src="https://trikky.ru/wp-content/blogs.dir/1/files/2023/03/23/zyro-image-11.jpg" alt="Яблоко">
-            <img data-aos="fade-right" height="300" width="200" src="https://img1.akspic.ru/previews/1/6/0/6/7/176061/176061-yablochnyj_pejzazh-yabloko-illustracia-prirodnyj_landshaft-purpur-500x.jpg" alt="Пейзаж">
+            <img data-aos="flip-left" height="300" width="200" src="https://i.postimg.cc/RFBJSQRg/i.webp" alt="Кошка">
+            <p  data-aos="flip-left" >С точки зрения научной систематики, домашняя кошка — млекопитающее семейства кошачьих отряда хищных. Одни исследователи рассматривают домашнюю кошку как подвид дикой кошки, другие — как отдельный биологический вид.</p>
+            <img data-aos="fade-down-right" height="300" width="200" src="https://i.postimg.cc/jqkqv47B/images.jpg" alt="Заяц">
+            <img data-aos="fade-up" height="300" width="200" src="https://i.postimg.cc/RZwMSrDz/zyro-image-11.jpg" alt="Яблоко">
+            <img data-aos="fade-right" height="300" width="200" src="https://i.postimg.cc/C5Zg99qX/176061-yablochnyj-pejzazh-yabloko-illustracia-prirodnyj-landshaft-purpur-500x.jpg" alt="Пейзаж">
         </div>
 
         <div class="main" id="aa">
             <h2 data-aos="fade-up-left">Гора и река</h2>
             <h5 data-aos="fade-up-left">Гора́ (мн. ч. — го́ры) — форма рельефа, изолированное резкое поднятие местности с выраженными склонами и подножием или вершина в горной стране.
                 По характеру вершины выделяют пикообразные, куполообразные, платообразные и другие горы. Вершины подводных гор могут представлять собой острова.</h5>
-            <img data-aos="fade-down-left" height="300" width="530" src="https://img1.akspic.ru/previews/5/3/0/9/7/179035/179035-voda-gora-gidroresursy-rastenie-oblako-550x310.jpg" alt="Гора">
+            <img data-aos="fade-down-left" height="300" width="530" src="https://i.postimg.cc/Dy80KMh2/179035-voda-gora-gidroresursy-rastenie-oblako-550x310.jpg" alt="Гора">
             <p data-aos="flip-left">Элементы горного микрорельефа
                 В горах, особенно высоких, встречается большое количество видов микрорельефа (мелких форм рельефа, не превышающих в поперечнике и в высоту нескольких метров), нехарактерных для равнинных участков земной поверхности.</p>
             <p data-aos="flip-left">В высокогорье многие элементы микрорельефа (например, морены) имеют ледниковое происхождение и потому не встречаются в среднегорье и равнинной местности, где со времени существования ледников прошёл слишком большой период времени.</p>
             <br>
-            <h2 data-aos="flip-left">Неоновый лев</h2>
+            <h2 data-aos="flip-left" id="lew">Неоновый лев</h2>
             <h5 data-aos="flip-right">Лев (лат. Panthera leo) — вид хищных млекопитающих, один из пяти представителей рода пантер (Panthera), относящегося к подсемейству больших кошек в составе семейства кошачьих. Наряду с тигром — самая крупная из ныне живущих кошек, масса некоторых самцов может достигать 250 кг.</h5>
-            <img data-aos="flip-right" height="530" width="530" src="https://4g-inter.net/image/cache/catalog/goods/ai/3d/lion1-500x500.jpg" alt="Лев">
+            <img  data-aos="flip-right" height="530" width="530" src="https://i.postimg.cc/1z9Zy8Fp/lion1-500x500.jpg" alt="Лев">
             <p data-aos="flip-right">Трудно сказать достоверно, кто массивнее: крупнейшие подвиды льва или крупнейшие подвиды тигра. Связано это с тем, что известные очень большие массы амурских тигров в большинстве своём признаны недостаточно достоверными.</p>
             <p data-aos="flip-right">Достаточными данными о размерах и массе представителей крупнейших подвидов льва (например, берберийском) наука не располагает. Что касается живущих в неволе животных, они часто являют собой смешение разных подвидов. Существует мнение, что львы в неволе несколько превышают тигров в размерах и массе, так же как и обратное ему.</p>
             <br>
         </div>
     </div>
-    
+
+    <section id="about">
+        <h2 data-aos="flip-right">О мне</h2>
+        <img data-aos="flip-right" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb3JcdI3lJCQG3uvHP4a2dD4Lt0beKlMvsyg&s" width="400" height="200" alt="Placeholder Image">
+        <p data-aos="flip-right">Этот веб-сайт сделал я - Дима Кохановский. Я люблю программировать - это моё хобби.</p>
+        <p data-aos="flip-right">Мне 12 лет. Живу я отлично.</p>
+        <ul>
+            <li>• У меня есть семья</li>
+            <li>• Хорошо учусь в школе</li>
+            <li>• В свободное время играю в игры</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHhXUdlzNcYFpdF6Io6E1mEGfzSboW4N91ug&s" width="700px" alt="Телефон">
+        <h2>Контакты</h2>
+        <p>Если у вас есть какие-либо вопросы или вы хотите связаться со мной, воспользуйтесь контактами ниже:</p>
+    </section>
+
         <footer data-aos="fade-right" id="ww">
             <h2>Мои контакты</h2>
             <a class="a" href="mailto:dimakokh999@gmail.com">dimakokh999@gmail.com</a>
             <p><a class="a" target="_parent" href="tel:+375296394743">+375 (29) 639 47 - 43</a></p>
+            <h4>&copy; 2024 My Simple Website</h4>
         </footer>
         <script src="AOS.js"></script>
         <script>
@@ -239,19 +88,26 @@
                     document.body.className = 'dark-theme';
                 }
             });
+
+            document.addEventListener('DOMContentLoaded', function () {
+            const navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    const sectionId = this.getAttribute('href').substring(1);
+                    const section = document.getElementById(sectionId);
+                    window.scrollTo({
+                        top: section.offsetTop,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+
+            function go() {
+                let wwod = prompt('?????', null);
+                alert(`Почему ты ввел ${wwod} ?`); // Тебе 100 лет!
+            }
             </script>
-        <script>
-            function submitForm(event) {
-                event.preventDefault();
-                const name = document.getElementById('name').value;
-                const email = document.getElementById('email').value;
-                const message = document.getElementById('message').value;
-
-                // Display the form data in an alert (for demonstration purposes)
-                alert(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
-
-                // Here you can add code to send the form data to a server if needed
-        }
-    </script>
 </body>
 </html>
