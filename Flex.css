@@ -135,6 +135,10 @@
         overflow: hidden;
     }
 
+    #GitHub {
+        border-radius: 100px;
+    }
+
     nav a {
         color: #ffffff;
         padding: 14px 20px;
