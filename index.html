@@ -121,6 +121,18 @@
                 let wwod = prompt('?????', null);
                 alert(`Почему ты ввел ${wwod} ?`); // Тебе 100 лет!
             }
+
+            window.onscroll = function() {
+                updateScrollStatusBar();
+            };
+
+            function updateScrollStatusBar() {
+                var scrollStatusBar = document.getElementById("scrollStatusBar");
+                var totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                var scrollPosition = window.scrollY;
+                var scrollPercentage = (scrollPosition / totalHeight) * 100;
+                scrollStatusBar.style.width = scrollPercentage + "%";
+            }
             </script>
 </body>
 </html>
